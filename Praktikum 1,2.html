@@ -1,0 +1,298 @@
+<html lang="en">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <!-- internal css -->
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Tahoma';
+        }
+
+        body {
+            margin: 0px auto;
+        }
+
+        li a:hover:not(.active) {
+            color: #212121
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .col-6 {
+            width: 50%;
+            float: left;
+            padding: 40px;
+        }
+
+        .card {
+            padding: 20px;
+            background-color: lightgrey;
+            box-shadow: 5px 7px #b9b6b6;
+        }
+
+        .text-card {
+            padding: 0;
+        }
+
+        .text-card .text-left {
+            float: left
+        }
+
+        .text-card .text-right {
+            float: right;
+        }
+
+        .input-voucher {
+            width: 89%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .btn-voucher {
+            padding: 10px;
+            width: 10%;
+            background-color: white;
+            color: black;
+        }
+
+        footer {
+            position: bottom;
+            bottom: 50px;
+            left: 10px;
+            left: 0;
+            bottom: 10px;
+            width: 100%;
+            padding: 20px;
+            background-color: lightgrey;
+            font-size: 18px;
+        }
+
+        .method-payment {
+            padding: 5px;
+        }
+
+        .method-payment i {
+            margin-right: 10px;
+        }
+
+        .input-email {
+            width: 75%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .btn-subscribe {
+            padding: 10px;
+            margin-left: -10px;
+            background-color: grey;
+            color: white;
+        }
+    </style>
+
+    <!---- use font awesome --->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body style="min-height: 100vh;">
+    <!-- navbar -->
+    <nav style="background-color: #DDDDDD; margin-top: -20px;margin-bottom: -40px;">
+        <h1 style="padding: 10px; float: left;">
+            <a style="font-size: 20px;" href="#"> <i class="fas fa-store fa-lg"></i> &nbsp;Mueza Lynx </a>
+        </h1>
+        <ul style="list-style-type: none; margin: 0; padding: 22px; overflow: hidden;">
+            <li style="border-right: 1px solid; float: left; padding: 15px;">
+                <a style="font-size: 20px;" href="#"> <u>Category 1</u> </a>
+            </li>
+            <li style="border-right: 1px solid; float: left; padding: 15px;">
+                <a style="font-size: 20px;" href="#"><u> Category 2</u> </a>
+            </li>
+            <li style="float: left; padding: 15px;">
+                <a style="font-size: 20px;" href="#"> <u>Category 3</u> </a>
+            </li>
+            <li style="float: right; padding: 15px; margin-left: -5px;">
+                <a style="font-size: 20px;" href="#"> <i class="fas fa-shopping-cart"></i> Cart (1) </a>
+            </li>
+            <li style="float: right; padding: 15px; margin-left: -5px;">
+                <a style="font-size: 20px;" href="#"> <i class="fas fa-search"></i> </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- end of navbar -->
+    <div style="clear: both;"></div>
+    <!-- table cart -->
+    <section class="col-6">
+        <article>
+            <header>
+                <i class="far fa-check-circle fa-6x" style="float: left; vertical-align: middle;"></i>
+                <div style="float: left; padding: 5px; margin-left: 10px;">
+                    <p> Order 5510202101 </p>
+                    <p style="margin-top: -5px;">
+                        <span style="font-weight: 700; font-size: 22px;">Thank you, Sayyid!</span>
+                    </p>
+                </div>
+            </header>
+            <div style="clear: both;"></div>
+
+            <hr>
+
+            <p>
+                Your order is confirmed.
+            </p>
+
+            <p>
+                We've accepted your order and we're getting it ready.
+            </p>
+
+            <hr>
+
+            <h2>Customer Information</h2>
+
+            <div style="float: left;">
+                <table style="float: left" border="0">
+                    <tr>
+                        <td style="color: #1D2238;"><strong>Shipping Address</strong>
+                            <br>Sayyid Ramadhan<br><a style="color:blue;" href="#">
+                                Olive kost Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan 10550</a>
+                        </td>
+                        <td style="color: #1D2238;"><strong>Billing Address</strong>
+                            <br>Sayyid Ramadhan<br><a style="color:blue;" href="#">
+                                Olive kost Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan 10550</a>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <tr>
+                        <td style="color: #1D2238;"><strong>Shipping Methode</strong>
+                            <br>UPS Ground (Estimated ship time of 3-6 days)<br>
+
+                        </td>
+                        <td style="color: #1D2238;"><strong>Payment Methode</strong>
+                            <br><i class="fab fa-cc-visa fa-lg"></i> Ending in 101201 - $500.00<br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="clear: left;"></div>
+
+            <hr>
+
+        </article>
+    </section>
+    <!-- end of table cart -->
+
+    <!-- bill -->
+    <section class="col-6">
+        <article class="card">
+            <header>
+                <h3>Summary (1 Item)</h3>
+            </header>
+            <div class="text-card">
+                <p class="text-left">
+                    Subtotal
+                </p>
+                <p class="text-right">
+                    $20.00
+                </p>
+
+                <div style="clear: both;"></div>
+            </div>
+
+            <div class="text-card">
+                <p class="text-left">
+                    Shipping
+                </p>
+                <p class="text-right">
+                    $2.20
+                </p>
+
+                <div style="clear: both;"></div>
+            </div>
+
+            <div class="text-card">
+                <p class="text-left">
+                    Est. Taxes
+                </p>
+                <p class="text-right">
+                    $1.40
+                </p>
+
+                <div style="clear: both;"></div>
+            </div>
+
+            <hr>
+            <h3>
+                Gift card or discount code
+            </h3>
+            <div style="margin-top: -20px;">
+                <input type="text" name="email" id="email" class="input-voucher">
+                <button class="btn-voucher">Apply</button>
+            </div>
+            <hr>
+
+            <div class="text-card">
+                <p class="text-left">
+                    Total
+                </p>
+                <p class="text-right">
+                    $20.00
+                </p>
+
+                <div style="clear: both;"></div>
+            </div>
+        </article>
+    </section>
+    <!-- end of bill -->
+    <div style="clear: both;"></div>
+    <!-- footer -->
+    <footer>
+        <div style=" float:left;">
+            <h4 style="float: left;">
+                <a href="#">Mueza Lynx</a>
+            </h4>
+            <ul style="list-style-type: none; margin: 0; padding: 10px; overflow: hidden;">
+                <li style="border-right: 1px solid; float: left; padding: 15px;">
+                    <a href="#"><u> Category 1 </u></a>
+                </li>
+                <li style="border-right: 1px solid; float: left; padding: 15px;">
+                    <a href="#"><u> Category 2 </u></a>
+                </li>
+                <li style="float: left; padding: 15px;">
+                    <a href="#"><u>Category 3 </u></a>
+                </li>
+            </ul>
+            <div class="method-payment">
+                <i class="fab fa-cc-visa fa-2x"></i>
+                <i class="fab fa-cc-mastercard fa-2x"></i>
+                <i class="fab fa-cc-paypal fa-2x"></i>
+            </div>
+        </div>
+        <div style="float:right;">
+            <h4>
+                Stay in Touch! Join our Newsletter.
+            </h4>
+
+            <input type="text" name="email" id="email" placeholder="Enter Email" class="input-email">
+            <button class="btn-subscribe">Subscribe</button>
+        </div>
+
+
+        <div style="clear: both;"></div>
+    </footer>
+    <!-- end of footer -->
+</body>
+
+</html>

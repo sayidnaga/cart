@@ -1,0 +1,313 @@
+<html lang="en">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+
+    <!-- internal css -->
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Tahoma';
+        }
+
+        body {
+            margin: 0px auto;
+        }
+
+        li a:hover:not(.active) {
+            color: #212121
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .col-6 {
+            width: 50%;
+            float: left;
+            padding: 40px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table thead th {
+            border-top: 1px solid #999;
+            border-bottom: 1px solid #999;
+        }
+
+        table tfoot td {
+            border-top: 1px solid #999;
+            border-bottom: 1px solid #999;
+        }
+
+        img {
+            padding: 10px;
+            width: 30%;
+            vertical-align: middle;
+        }
+
+        .select {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .select .opt {
+            width: 30%;
+        }
+
+        tfoot {
+            text-align: right;
+        }
+
+        .card {
+            padding: 20px;
+            background-color: lightgrey;
+            box-shadow: 5px 7px #b9b6b6;
+        }
+
+        .text-card {
+            padding: 0;
+        }
+
+        .text-card .text-left {
+            float: left
+        }
+
+        .text-card .text-right {
+            float: right;
+        }
+
+        .btn-checkout {
+            padding: 15px;
+            width: 100%;
+            background-color: blue;
+            font-size: 25px;
+            color: white;
+            border: 3px solid black;
+        }
+
+        .btn-checkout:hover {
+            background-color: grey;
+        }
+
+        footer {
+            position: bottom;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 20px;
+            background-color: lightgrey;
+            font-size: 18px;
+        }
+
+        .method-payment {
+            padding: 5px;
+        }
+
+        .method-payment i {
+            margin-right: 10px;
+        }
+
+        .input-email {
+            width: 75%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .btn-subscribe {
+            padding: 10px;
+            margin-left: -10px;
+            background-color: grey;
+            color: white;
+        }
+    </style>
+
+    <!---- use font awesome --->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body style="min-height: 100vh;">
+    <!-- navbar -->
+    <nav style="background-color: #D3D3D3;">
+        <h1 style="padding: 10px; float: left;">
+            <a style="font-size: 20px;" href="#"> <i class="fas fa-store fa-lg"></i> &nbsp;Mueza Lynx </a>
+        </h1>
+        <ul style="list-style-type: none; margin: 0; padding: 22px; overflow: hidden;">
+            <li style="border-right: 1px solid; float: left; padding: 15px;">
+                <a style="font-size: 20px;" href="#"> <u>Category 1</u> </a>
+            </li>
+            <li style="border-right: 1px solid; float: left; padding: 15px;">
+                <a style="font-size: 20px;" href="#"> <u>Category 3</u> </a>
+            </li>
+            <li style="float: left; padding: 15px;">
+                <a style="font-size: 20px;" href="#"> <u>Category 3</u> </a>
+            </li>
+            <li style="float: right; padding: 15px; margin-left: -5px;">
+                <a style="font-size: 20px;" href="#"> <i class="fas fa-shopping-cart"></i> Cart (1) </a>
+            </li>
+            <li style="float: right; padding: 15px; margin-left: -5px;">
+                <a style="font-size: 20px;" href="#"> <i class="fas fa-search"></i> </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- end of navbar -->
+    <div style="clear: both;"></div>
+    <!-- table cart -->
+    <section class="col-6">
+        <article>
+            <header>
+                <h1>You Cart</h1>
+            </header>
+            <table>
+                <thead>
+                    <th>
+                        Item
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Quantity
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td width="80%">
+                            <img src="kaos.jpg" shirt picture">
+                            T-Shirt size small
+                        </td>
+                        <td style="text-align: center;">
+                            $20.00
+                        </td>
+                        <td class="select" style="text-align: center;">
+                            <select name="qty" id="qty" class="opt">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            Subtotal : $20.00
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+    </section>
+    <!-- end of table cart -->
+
+    <!-- bill -->
+    <section class="col-6">
+        <article class="card">
+            <header>
+                <h3>Summary (1 Item)</h3>
+            </header>
+            <div class="text-card">
+                <p class="text-left">
+                    Subtotal
+                </p>
+                <p class="text-right">
+                    $20.00
+                </p>
+
+                <div style="clear: both;"></div>
+            </div>
+
+            <div class="text-card">
+                <p class="text-left">
+                    Shipping
+                </p>
+                <p class="text-right">
+                    -
+                </p>
+
+                <div style="clear: both;"></div>
+            </div>
+
+            <div class="text-card">
+                <p class="text-left">
+                    Est. Taxes
+                </p>
+                <p class="text-right">
+                    -
+                </p>
+
+                <div style="clear: both;"></div>
+            </div>
+
+            <hr>
+
+            <div class="text-card">
+                <p class="text-left">
+                    Total
+                </p>
+                <p class="text-right">
+                    $20.00
+                </p>
+
+                <div style="clear: both;"></div>
+            </div>
+            <button class="btn-checkout">Checkout</button>
+        </article>
+    </section>
+    <!-- end of bill -->
+    <div style="clear: both;"></div>
+    <!-- footer -->
+    <footer>
+        <div style="float:left;">
+            <h4 style="float: left;">
+                <a href="#">Mueza Lynx</a>
+            </h4>
+            <ul style="list-style-type: none; margin: 0; padding: 10px; overflow: hidden;">
+                <li style="border-right: 1px solid; float: left; padding: 15px;">
+                    <a href="#"><u> Category 1 </u></a>
+                </li>
+                <li style="border-right: 1px solid; float: left; padding: 15px;">
+                    <a href="#"> <u>Category 2</u> </a>
+                </li>
+                <li style="float: left; padding: 15px;">
+                    <a href="#"> <u>Category 3</u> </a>
+                </li>
+            </ul>
+            <div class="method-payment">
+                <i class="fab fa-cc-visa fa-2x"></i>
+                <i class="fab fa-cc-mastercard fa-2x"></i>
+                <i class="fab fa-cc-paypal fa-2x"></i>
+            </div>
+        </div>
+        <div style="float:right;">
+            <h4>
+                Stay in Touch! Join our Newsletter.
+            </h4>
+
+            <input type="text" name="email" id="email" placeholder="Enter Email" class="input-email">
+            <button class="btn-subscribe">Subscribe</button>
+        </div>
+
+
+        <div style="clear: both;"></div>
+    </footer>
+    <!-- end of footer -->
+</body>
+
+</html>
